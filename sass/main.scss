@@ -1,0 +1,23 @@
+//ABSTRACT
+@import "abstract/mixins";
+@import "abstract/variables";
+
+//BASE 
+@import "base/animations";
+@import "base/base";
+@import "base/utilities";
+@import "base/typography";
+
+//COMPONENTS
+@import "components/zoho-widget";
+@import "components/whatsapp-widget";
+@import "components/buttons";
+@import "components/scroll-bar";
+
+//Layout
+@import "layout/responsive";
+@import "layout/nav-bar";
+@import "layout/socail-media";
+
+//PAGES 
+@import "pages/homepage";

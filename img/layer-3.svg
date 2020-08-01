@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="647" height="601" viewBox="0 0 647 601">
+  <defs>
+    <filter id="layer-3" x="0" y="0" width="647" height="601" filterUnits="userSpaceOnUse">
+      <feOffset dx="30" dy="30" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="45" result="blur"/>
+      <feFlood flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#layer-3)">
+    <text id="layer-3-2" data-name="layer-3" transform="translate(105 184)" fill="#fff" font-size="75" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">GET YOUR </tspan><tspan x="0" y="113">BUSINESS </tspan><tspan x="0" y="226">DONE . . .</tspan></text>
+  </g>
+</svg>

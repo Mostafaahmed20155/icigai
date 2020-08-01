@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage | ICIGAI</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/538f8c358e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <img src="img/logo.svg" alt="logo" class="nav-bar__logo" />
+        <ul class="nav-bar__list">
+          <li class="nav-bar__list-item">
+            <a href="#" class="item-selected">Home</a>
+          </li>
+          <li class="nav-bar__list-item">
+            <a href="#">About Us</a>
+          </li>
+          <li class="nav-bar__list-item">
+            <a href="#">Products</a>
+          </li>
+          <li class="nav-bar__list-item">
+            <a href="#">Solutions</a>
+          </li>
+        </ul>
+        <a href="#" class="btn">
+          <span class="contact-us">Contact Us</span>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <div class="socail-media-box">
+        <a
+          href="#"
+          onmouseover="fbIconSelected()"
+          onmouseout="fbIconNotSelected()"
+        >
+          <img
+            src="img/Icon awesome-facebook-f.svg"
+            alt="facebook"
+            class="sm-icon fb-icon"
+          />
+        </a>
+        <a
+          href="#"
+          onmouseover="linkedinIconSelected()"
+          onmouseout="linkedinIconNotSelected()"
+        >
+          <img
+            src="img/Icon awesome-linkedin-in.svg"
+            alt="linkedin"
+            class="sm-icon linkedin-icon"
+          />
+        </a>
+        <a
+          href="#"
+          onmouseover="instIconSelected()"
+          onmouseout="instIconNotSelected()"
+        >
+          <img
+            src="img/Icon awesome-instagram.svg"
+            alt="instgram"
+            class="sm-icon inst-icon"
+          />
+        </a>
+        <a
+          href="#"
+          onmouseover="twtIconSelected()"
+          onmouseout="twtIconNotSelected()"
+        >
+          <img
+            src="img/Icon awesome-twitter.svg"
+            alt="facebook"
+            class="sm-icon twt-icon"
+          />
+        </a>
+      </div>
+      <div class="hero-section">
+        <img
+          src="img/abstract-shapes-bg.png"
+          alt="bg"
+          class="hero-section__bg"
+        />
+        <div class="hero-section__content-box">
+          <div class="hero-section__content">
+            <h1 class="hero-header">
+              INFORMATION <br />
+              <span>Technology</span>
+            </h1>
+            <a href="#" class="hero-btn db-rounded-btn">Learn more</a>
+          </div>
+        </div>
+        <div class="hero-section__pictures" id="scene">
+          <img
+            src="img/layer-1.svg"
+            alt="layer-1"
+            class="layer-1"
+            data-depth="0.2"
+          />
+          <img
+            src="img/layer-2.svg"
+            alt="layer-2"
+            class="layer-2"
+            data-depth="0.6"
+          />
+          <img
+            src="img/layer-3.svg"
+            alt="layer-3"
+            class="layer-3"
+            data-depth="1.2"
+          />
+        </div>
+      </div>
+      <div class="companies">
+        <img src="img/fujitsu-2.svg" alt="company-logo" class="company-logo" />
+        <img src="img/asus.svg" alt="company-logo" class="company-logo" />
+        <img src="img/windows-10.svg" alt="company-logo" class="company-logo" />
+        <img src="img/zagg.svg" alt="company-logo" class="company-logo" />
+        <img src="img/intel.svg" alt="company-logo" class="company-logo" />
+      </div>
+      <div class="details-section">
+        <img
+          src="img/abstract-shapes-bg.png"
+          alt="bg"
+          class="details-section__bg"
+        />
+        <div class="details-section__left">
+          <img src="img/c-letter.png" alt="c" class="c-letter" />
+          <div class="details-card">
+            <div class="squared-border"></div>
+            <h1 class="card-title title-1">B2B</h1>
+            <p class="card-paragraph p1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+              est! Enim, architecto sed!
+            </p>
+            <div class="link-btn">
+              <a href="#"
+                ><img src="img/link-icon.svg" alt="link-icon" class="link-icon"
+              /></a>
+            </div>
+          </div>
+          <div class="details-card">
+            <div class="squared-border"></div>
+            <h1 class="card-title title-2">Details-Oriented</h1>
+            <p class="card-paragraph p2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+              est! Enim, architecto sed!
+            </p>
+            <div class="link-btn link-2">
+              <a href="#"
+                ><img src="img/link-icon.svg" alt="link-icon" class="link-icon"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="details-section__right">
+          <h1 class="details-header">We are meant for the details</h1>
+          <p class="details-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+            dignissimos quo vitae eaque vero corporis, ullam, velit error magnam
+            blanditiis illum reprehenderit, temporibus aliquid nisi iure! Odio
+            officia praesentium soluta maxime, quam recusandae? Exercitationem,
+            perspiciatis!
+          </p>
+          <a href="#" class="mini-rounded-btn">About us</a>
+        </div>
+      </div>
+      <div class="our-solutions">
+        <img
+          src="img/abstract-shapes-bg.png"
+          alt="bg"
+          class="our-solutions__bg"
+        />
+        <div class="left">
+          <div class="single-solution-card">
+            <div class="single-solution-icon">
+              <img src="img/strategy-icon.svg" alt="strategy-icon" />
+            </div>
+            <div class="single-solution-info">
+              <h1 class="single-solution-title">Getting to the target</h1>
+              <p class="single-solution-details">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quisquam aliquam sequi
+              </p>
+            </div>
+          </div>
+          <div class="single-solution-card">
+            <div class="single-solution-icon">
+              <img src="img/strategy-icon.svg" alt="strategy-icon" />
+            </div>
+            <div class="single-solution-info">
+              <h1 class="single-solution-title">Getting to the target</h1>
+              <p class="single-solution-details">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quisquam aliquam sequi
+              </p>
+            </div>
+          </div>
+          <div class="single-solution-card">
+            <div class="single-solution-icon">
+              <img src="img/strategy-icon.svg" alt="strategy-icon" />
+            </div>
+            <div class="single-solution-info">
+              <h1 class="single-solution-title">Getting to the target</h1>
+              <p class="single-solution-details">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quisquam aliquam sequi
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="middle">
+          <div class="solutions-card">
+            <img
+              src="img/top-left-style.svg"
+              alt="illustration"
+              class="top-left-style"
+            />
+            <img
+              src="img/bottom-right-style.svg"
+              alt="illustration"
+              class="bottom-right-style"
+            />
+            <h1 class="solutions-title">Our Solutions</h1>
+            <p class="solutions-details">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis
+              cumque repudiandae tempore illo commodi aliquam!
+            </p>
+          </div>
+          <a href="#" class="view-more-btn"
+            >View All <span><img src="img/arrow.svg" alt="arrow" /></span
+          ></a>
+        </div>
+        <div class="right">
+          <div class="single-solution-card">
+            <div class="single-solution-icon">
+              <img src="img/strategy-icon.svg" alt="strategy-icon" />
+            </div>
+            <div class="single-solution-info">
+              <h1 class="single-solution-title">Getting to the target</h1>
+              <p class="single-solution-details">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quisquam aliquam sequi
+              </p>
+            </div>
+          </div>
+          <div class="single-solution-card">
+            <div class="single-solution-icon">
+              <img src="img/strategy-icon.svg" alt="strategy-icon" />
+            </div>
+            <div class="single-solution-info">
+              <h1 class="single-solution-title">Getting to the target</h1>
+              <p class="single-solution-details">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quisquam aliquam sequi
+              </p>
+            </div>
+          </div>
+          <div class="single-solution-card">
+            <div class="single-solution-icon">
+              <img src="img/strategy-icon.svg" alt="strategy-icon" />
+            </div>
+            <div class="single-solution-info">
+              <h1 class="single-solution-title">Getting to the target</h1>
+              <p class="single-solution-details">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quisquam aliquam sequi
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="icigai">
+        <img src="img/ICIGAI.svg" alt="icigai" />
+        <img src="img/g-letter@2x.png" alt="g-letter" class="g-letter" />
+      </div>
+      <div class="our-products">
+        <img
+          src="img/abstract-path-2.svg"
+          alt="abstract-path"
+          class="abstract-path"
+        />
+        <img
+          src="img/abstract-shapes-bg.png"
+          alt="bg"
+          class="our-products__bg"
+        />
+        <div class="left">
+          <div class="left__info">
+            <h1>
+              We give our clients and unimaginalbe <br />
+              experience
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+              quo adipisci architecto sapiente commodi harum voluptatibus. Lorem
+              ipsum, dolor sit amet consectetur adipisicing elit. Eveniet,
+              ullam.
+            </p>
+            <a href="#" class="mini-rounded-btn prods-btn"
+              >Explore our products</a
+            >
+          </div>
+        </div>
+        <div class="right">
+          <div class="circle-container">
+            <div class="product-icon product-selected" id="prod-1">
+              <i class="far fa-chart-bar fa-4x"></i>
+            </div>
+            <div class="product-icon" id="prod-2">
+              <i class="fas fa-pen fa-4x"></i>
+            </div>
+            <div class="product-icon" id="prod-3">
+              <i class="fas fa-pen fa-4x"></i>
+            </div>
+            <div class="product-icon" id="prod-4">
+              <i class="fas fa-pen fa-4x"></i>
+            </div>
+            <div class="product-icon" id="prod-5">
+              <i class="fas fa-pen fa-4x"></i>
+            </div>
+            <div class="product-icon" id="prod-6">
+              <i class="fas fa-pen fa-4x"></i>
+            </div>
+          </div>
+          <div class="product-info">
+            <h1 class="product-title">Product 1</h1>
+            <p class="product-details">Lorem ipsum dolor sit,amet <br> consectetur adipisicing elit. <br> Magni, tempora?</p>
+          </div>
+        </div>
+      </div>
+      <div class="statistics">
+        <div class="stats-box">
+          <img
+          src="img/abstract-shapes-bg.png"
+          alt="bg"
+          class="statistics__bg"
+        />
+          <img src="img/stats-left-abstract.svg" alt="abstract" class="stats-abst-left">
+          <img src="img/stats-right-abstract.svg" alt="abstract" class="stats-abst-right">
+          <div class="stats-numbers">
+            <div class="stats-numbers__input">
+              <h1>Client</h1>
+              <p>55</p>
+            </div>
+            <div class="stats-numbers__input">
+              <h1>Products</h1>
+              <p>317</p>
+            </div>
+            <div class="stats-numbers__input">
+              <h1>Partnerships</h1>
+              <p>68</p>
+            </div>
+            <div class="stats-numbers__input">
+              <h1>Solutions</h1>
+              <p>12</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testmonials">
+        <h1 class="testmonials__header">Testmonials</h1>
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <!-- SOCIAL MEDIA WIDGETS  -->
+    <!-- Zoho Widget -->
+    <script type="text/javascript">
+      var $zoho = $zoho || {};
+      $zoho.salesiq = $zoho.salesiq || {
+        widgetcode:
+          "355ccb97f82a47ff2bc9af326d9ad4d3d69bf3e1f3e8cc2cd94f0e7937e2dd34",
+        values: {},
+        ready: function () {},
+      };
+      var d = document;
+      s = d.createElement("script");
+      s.type = "text/javascript";
+      s.id = "zsiqscript";
+      s.defer = true;
+      s.src = "https://salesiq.zoho.com/widget";
+      t = d.getElementsByTagName("script")[0];
+      t.parentNode.insertBefore(s, t);
+      d.write("<div id='zsiqwidget'></div>");
+    </script>
+    <!-- Whatsapp Widget -->
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-aeaca385-5bc8-42da-96ed-db8b6b34a33e"></div>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+//LIQUID BUTTON
+
+// .btn-liquid {
+// 	display: inline-block;
+// 	position: relative;
+// 	border-radius: 27px;
+// 	color: #fff;
+//     font-size: 1.3rem;
+//     font-weight: 500;
+//     letter-spacing: 0.05em;
+// 	text-align: center;
+// 	text-decoration: none;
+//     text-transform: uppercase;
+//     width: 24rem;
+//     height: 6rem;
+//     .inner {
+//         position: relative;
+//         z-index: 2;
+//         padding: 3rem;
+//     }
+//     canvas {
+//         position: absolute;
+//         top: -50px;
+//         right: -50px;
+//         bottom: -50px;
+//         left: -50px;
+//         z-index: 1;
+//     }
+// }
+
+//CONTACT US BTN
+.btn {
+    padding: 1.5rem 3rem;
+    // background-color: salmon;
+    border-radius: 2rem 0 2rem 0;
+    border: 0.3rem solid black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+    position: relative;
+    
+  &:after {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem 0 2rem 0;
+    @include linearGradient;
+    content: "";
+    z-index: -1;
+    transition: transform 0.2s ease-in, width 0.2s ease-out 0.2s;
+  }
+
+  &:hover {
+    &:after {
+      transform: translate(-10px, -10px);
+      width: calc(100% - 10px);
+    }
+  }
+
+  &:active {
+    &:after {
+      width: 100%;
+    }
+  }
+}
+
+//Double-rounded button
+.db-rounded-btn {
+    padding: 2rem 6rem;
+    @include linearGradient;
+    border-radius: 4rem 0 4rem 0;
+    text-decoration: none;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 500;
+    transition: all .3s;
+    @include buttonShadow(3rem, 3rem,$color-gradient-lower, 0.5);
+    &:hover {
+      transition: .3s;
+      @include linearGradientReversed;
+    }
+}
+
+//btn
+.mini-rounded-btn {
+  padding: 2rem 6rem;
+  background-color: black;
+  @include buttonShadow(3rem, 3rem,black, 0.3);
+  text-decoration: none;
+  @include appliedFont('Poppins', 500, 1.4rem);
+  color: white;
+  border-radius: 2rem 0 2rem 0;
+  transition: .3s;
+  &:hover {
+    background-color: #e7e7e7;
+    color: black;
+  }
+}
