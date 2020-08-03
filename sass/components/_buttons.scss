@@ -99,3 +99,29 @@
     color: black;
   }
 }
+
+//launch-btn
+.launch-btn {
+  @include appliedFont('Poppins', 600, 1.8rem);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 6rem;
+  position: relative;
+  padding-bottom: 1.5rem;
+  &::before {
+    content: "";
+    width: 20%;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    border-radius: 5rem;
+    transition: .3s;
+  }
+
+  &:hover::before {
+    width: 75%;
+  }
+}

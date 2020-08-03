@@ -15,7 +15,8 @@
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
 
 body {
   box-sizing: border-box; }
@@ -40,6 +41,9 @@ body {
 .hqtxZK {
   width: 60px !important;
   height: 60px !important; }
+
+div.eapps-widget {
+  position: fixed !important; }
 
 .btn {
   padding: 1.5rem 3rem;
@@ -96,6 +100,29 @@ body {
     background-color: #e7e7e7;
     color: black; }
 
+.launch-btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 6rem;
+  position: relative;
+  padding-bottom: 1.5rem; }
+  .launch-btn::before {
+    content: "";
+    width: 20%;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    border-radius: 5rem;
+    transition: .3s; }
+  .launch-btn:hover::before {
+    width: 75%; }
+
 /* width */
 ::-webkit-scrollbar {
   width: 7px; }
@@ -112,6 +139,59 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #D7D7D7; }
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 100%;
+  margin-bottom: 2rem; }
+
+.form__field {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  width: 85%;
+  border: 0;
+  border-bottom: 1px solid black;
+  outline: 0;
+  font-size: 1.3rem;
+  color: black;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s; }
+  .form__field::placeholder {
+    color: transparent; }
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px; }
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: black; }
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 400;
+  border-width: 2px;
+  border-image-slice: 1; }
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: black;
+    font-weight: 600; }
+
+/* reset input */
+.form__field:required, .form__field:invalid {
+  box-shadow: none; }
 
 @media only screen and (max-width: 1440px) {
   html {
@@ -213,6 +293,96 @@ body {
     .socail-media-box a:hover::before {
       width: 100%; }
 
+footer {
+  width: 100%;
+  min-height: 60rem;
+  margin-top: 15rem;
+  background-image: url("/img/footer-wave.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  footer .footer-wave {
+    width: 100%;
+    z-index: -1; }
+  footer .footer-inner {
+    width: 80%;
+    min-height: 45rem;
+    margin-top: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  footer .col-1, footer .col-7 {
+    width: 25%;
+    min-height: 45rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; }
+  footer .col-2, footer .col-3, footer .col-4, footer .col-5, footer .col-6 {
+    width: 10%;
+    min-height: 45rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 10rem;
+    align-items: center; }
+    footer .col-2 a, footer .col-3 a, footer .col-4 a, footer .col-5 a, footer .col-6 a {
+      text-decoration: none;
+      transition: .3s; }
+      footer .col-2 a:first-child, footer .col-3 a:first-child, footer .col-4 a:first-child, footer .col-5 a:first-child, footer .col-6 a:first-child {
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-bottom: 2.5rem; }
+      footer .col-2 a:not(:first-child), footer .col-3 a:not(:first-child), footer .col-4 a:not(:first-child), footer .col-5 a:not(:first-child), footer .col-6 a:not(:first-child) {
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin-bottom: 2.5rem; }
+      footer .col-2 a:hover, footer .col-3 a:hover, footer .col-4 a:hover, footer .col-5 a:hover, footer .col-6 a:hover {
+        color: #d7d7d7; }
+  footer .col-1 .icigai-logo-white {
+    width: 40%;
+    margin-bottom: 15rem; }
+  footer .col-1 .copyrights {
+    margin-bottom: 2rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500; }
+  footer .col-1 a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: .3s; }
+    footer .col-1 a:not(:last-child) {
+      margin-right: 3rem; }
+    footer .col-1 a:hover {
+      color: #d7d7d7; }
+  footer .col-7 {
+    padding-top: 10rem;
+    padding-left: 7rem;
+    justify-content: flex-start; }
+    footer .col-7 h1 {
+      font-size: 2.3rem;
+      font-weight: 600;
+      color: white;
+      margin-bottom: 10rem; }
+    footer .col-7 p {
+      font-size: 1.8rem;
+      color: white;
+      margin-bottom: 3rem; }
+    footer .col-7 .footer-social-media {
+      font-size: 3rem;
+      color: white; }
+      footer .col-7 .footer-social-media i {
+        transition: .3s; }
+      footer .col-7 .footer-social-media a {
+        transition: .3s; }
+      footer .col-7 .footer-social-media a:not(:last-child) {
+        margin-right: 2rem; }
+      footer .col-7 .footer-social-media a:hover i {
+        color: #d7d7d7; }
+
 .hero-section {
   width: 100%;
   min-height: 10rem;
@@ -238,20 +408,22 @@ body {
     align-items: center;
     justify-content: center; }
     .hero-section__content-box .hero-header {
-      font-family: 'Poppins', sans-serif;
+      font-family: "Poppins", sans-serif;
       font-size: 4rem;
       font-weight: 600;
       line-height: 5rem;
-      z-index: 10; }
+      z-index: 10;
+      animation: fadeInLeft 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s; }
       .hero-section__content-box .hero-header span {
         font-size: 6rem;
         font-weight: 600;
-        font-family: 'Poppins', sans-serif; }
+        font-family: "Poppins", sans-serif; }
     .hero-section__content-box .hero-btn {
       z-index: 100;
       align-self: flex-start;
       margin-top: 5rem;
-      transition: .3s; }
+      transition: 0.3s;
+      animation: fadeInLeftBig 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s; }
   .hero-section__content {
     display: flex;
     flex-direction: column; }
@@ -264,19 +436,22 @@ body {
     .hero-section__pictures .layer-1 {
       width: 100%;
       height: 100%;
-      z-index: 10; }
+      z-index: 10;
+      animation: fadeInRight 1s ease-out; }
     .hero-section__pictures .layer-2 {
       position: absolute;
       top: 25% !important;
       left: 30% !important;
       width: 50%;
-      z-index: 20; }
+      z-index: 20;
+      animation: fadeInRight 4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s; }
     .hero-section__pictures .layer-3 {
       position: absolute;
       top: 15% !important;
       left: 0;
       width: 70%;
-      z-index: 30; }
+      z-index: 30;
+      animation: fadeInRight 5s cubic-bezier(1, 0, 0, 1) 0s; }
 
 .companies {
   width: 100%;
@@ -367,12 +542,12 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: .3s; }
+        transition: 0.3s; }
       .details-section__left .details-card:hover .link-btn {
         background-color: #B644E3; }
       .details-section__left .details-card .link-2 {
         background-color: #B644E3;
-        transition: .3s; }
+        transition: 0.3s; }
       .details-section__left .details-card:hover .link-2 {
         background-color: black; }
   .details-section__right {
@@ -410,12 +585,16 @@ body {
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-duration: 3s; }
-  .our-solutions .left, .our-solutions .middle, .our-solutions .right {
+  .our-solutions .left,
+  .our-solutions .middle,
+  .our-solutions .right {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; }
-    .our-solutions .left:not(:last-of-type), .our-solutions .middle:not(:last-of-type), .our-solutions .right:not(:last-of-type) {
+    .our-solutions .left:not(:last-of-type),
+    .our-solutions .middle:not(:last-of-type),
+    .our-solutions .right:not(:last-of-type) {
       margin-right: 3rem; }
   .our-solutions .left {
     padding: 2rem;
@@ -469,7 +648,7 @@ body {
       font-weight: 600;
       text-decoration: none;
       position: relative;
-      transition: .3s; }
+      transition: 0.3s; }
       .our-solutions .middle .view-more-btn span {
         width: 4rem;
         height: 4rem;
@@ -481,7 +660,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: .3s;
+        transition: 0.3s;
         box-shadow: 0 0 3rem rgba(0, 0, 0, 0.2); }
       .our-solutions .middle .view-more-btn:hover {
         background-color: #B644E3;
@@ -499,7 +678,7 @@ body {
     border-radius: 2rem;
     display: flex;
     padding: 2rem;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     background-image: none; }
     .our-solutions .single-solution-card .single-solution-icon {
       width: 7rem;
@@ -526,10 +705,11 @@ body {
       font-family: "Poppins", sans-serif;
       font-weight: 400;
       font-size: 1.5rem;
-      color: #D6D6D6; }
+      color: #d6d6d6; }
     .our-solutions .single-solution-card:hover {
       background-color: #B644E3; }
-    .our-solutions .single-solution-card:hover .single-solution-title, .our-solutions .single-solution-card:hover .single-solution-details {
+    .our-solutions .single-solution-card:hover .single-solution-title,
+    .our-solutions .single-solution-card:hover .single-solution-details {
       color: white; }
 
 .icigai {
@@ -590,7 +770,7 @@ body {
       .our-products .left__info .prods-btn {
         background-color: #B644E3;
         box-shadow: 3rem 3rem 5rem rgba(182, 68, 227, 0.3);
-        transition: .3s; }
+        transition: 0.3s; }
         .our-products .left__info .prods-btn:hover {
           background-color: #e7e7e7;
           box-shadow: 3rem 3rem 5rem rgba(0, 0, 0, 0.3); }
@@ -637,7 +817,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: .3s; }
+        transition: 0.3s; }
         .our-products .right .circle-container .product-icon i {
           color: #B644E3; }
         .our-products .right .circle-container .product-icon:hover {
@@ -660,7 +840,7 @@ body {
         font-family: "Poppins", sans-serif;
         font-weight: 500;
         font-size: 1.8rem;
-        color: #D6D6D6;
+        color: #d6d6d6;
         line-height: 4rem; }
 
 .statistics {
@@ -676,7 +856,7 @@ body {
     position: absolute;
     top: -50%;
     left: 0%;
-    width: 70%;
+    width: 80%;
     animation-name: animatedBackground;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
@@ -724,3 +904,174 @@ body {
           font-weight: 500;
           font-size: 2.3rem;
           margin-top: 3.5rem; }
+
+.testmonials {
+  width: 100%;
+  min-height: 30rem;
+  margin-top: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .testmonials__header {
+    padding: 3rem 0; }
+  .testmonials .content {
+    width: 100%;
+    min-height: 30rem;
+    display: flex; }
+  .testmonials__left {
+    width: 40%;
+    min-height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .testmonials__left .testmonial-pic {
+      width: 70%; }
+  .testmonials__right {
+    width: 60%;
+    min-height: 30rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-left: 6rem;
+    position: relative; }
+    .testmonials__right p {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-size: 1.8rem;
+      color: #d6d6d6;
+      line-height: 4rem;
+      margin-top: 7rem; }
+    .testmonials__right .left-quote {
+      position: absolute;
+      bottom: 19rem;
+      left: 0; }
+    .testmonials__right .right-quote {
+      position: absolute;
+      top: 5rem;
+      right: 25rem; }
+    .testmonials__right .contact {
+      display: flex;
+      align-self: flex-start;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 4.5rem;
+      width: 70%; }
+      .testmonials__right .contact__info .name {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1.8rem; }
+      .testmonials__right .contact__info .job-title {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1.8rem;
+        color: #d6d6d6; }
+      .testmonials__right .contact .left-arrow {
+        margin-right: 1.5rem; }
+
+.icigai-2 {
+  width: 100%;
+  min-height: 20rem;
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative; }
+  .icigai-2__bg {
+    width: 60%;
+    position: absolute;
+    top: -25%;
+    right: 25%;
+    z-index: -1;
+    animation-name: animatedBackground;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 3s; }
+  .icigai-2 .a-letter {
+    width: 25%;
+    position: absolute;
+    top: -25%;
+    left: 0; }
+  .icigai-2 img {
+    width: 70%; }
+
+.contact-us-box {
+  width: 100%;
+  min-height: 50rem;
+  margin-top: 7rem;
+  display: flex;
+  position: relative; }
+  .contact-us-box__bg {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 80%;
+    animation-name: animatedBackground;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    z-index: -1; }
+  .contact-us-box .contact-us__left {
+    width: 45%;
+    min-height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem; }
+    .contact-us-box .contact-us__left .contact-us-form {
+      width: 70%;
+      padding: 8rem;
+      min-height: 30rem;
+      background-color: white;
+      border-radius: 0.7rem;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0rem 3rem 5rem rgba(0, 0, 0, 0.08); }
+      .contact-us-box .contact-us__left .contact-us-form__header {
+        position: relative;
+        font-size: 1.7rem;
+        font-weight: 700;
+        padding-left: 7rem; }
+        .contact-us-box .contact-us__left .contact-us-form__header::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          height: 3px;
+          width: 5rem;
+          background-color: black;
+          top: 50%; }
+      .contact-us-box .contact-us__left .contact-us-form .drop-message {
+        font-size: 2.6rem;
+        font-weight: 700;
+        margin-top: 5rem;
+        margin-bottom: 2rem; }
+  .contact-us-box .contact-us__right {
+    width: 55%;
+    min-height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; }
+    .contact-us-box .contact-us__right .half-circle {
+      position: absolute;
+      right: 0;
+      top: 20%;
+      width: 10%; }
+    .contact-us-box .contact-us__right .icigai__info {
+      width: 60%;
+      min-height: 15rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .contact-us-box .contact-us__right .icigai__info .slogan {
+        font-size: 3rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem; }
+      .contact-us-box .contact-us__right .icigai__info .sub-paragraph {
+        font-size: 1.4rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 3.5rem;
+        margin-bottom: 1.5rem; }
+      .contact-us-box .contact-us__right .icigai__info .icigai-logo {
+        width: 52%; }

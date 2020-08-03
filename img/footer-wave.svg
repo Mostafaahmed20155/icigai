@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="792" viewBox="0 0 1920 792">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.165" x2="1.086" y2="1.4" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#21dbe9"/>
+      <stop offset="1" stop-color="#bf3ce3"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_440" data-name="Rectangle 440" width="1920" height="792" fill="url(#linear-gradient)"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-2" x1="0.131" y1="-0.276" x2="0.921" y2="0.931" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#24d9e9"/>
+      <stop offset="1" stop-color="#c536e3"/>
+    </linearGradient>
+  </defs>
+  <g id="footer-wave" clip-path="url(#clip-path)">
+    <path id="Path_4514" data-name="Path 4514" d="M2086.745,411.979c-62.535-144.562-214.722-317.137-367.66-304.341-127.8,10.693-152.025,142.119-290.043,145.022-127.847,2.688-151.508-109.148-288-110.3-135.4-1.141-155.771,108.554-292.085,108.255-137.933-.3-164.455-112.723-292.085-104.17C433.623,154.706,423.7,261.863,299.511,283.3,132.248,312.166,59.9,133.392-80.4,156.66-232.171,181.829-372.183,428.284-329.6,630.532c39.332,186.79,222.705,280.251,379.915,357.447,172.241,84.577,372.546,140.56,1127.49,132.766,653.913-6.752,763.08-51.432,841.531-142.979C2145.515,830.53,2165.279,593.527,2086.745,411.979Z" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>

@@ -37,6 +37,9 @@ function twtIconNotSelected() {
     document.querySelector('.twt-icon').src = "./img/Icon awesome-twitter.svg";
 }
 
+//AOS
+  AOS.init();
+
 //PRODUCTS SECTION
 const prod1 = document.getElementById('prod1');
 const prod2 = document.getElementById('prod2');
@@ -46,4 +49,5 @@ const prod5 = document.getElementById('prod5');
 const prod6 = document.getElementById('prod6');
 const prodTitle = document.querySelector(".product-title");
 const prodDetails = document.querySelector(".product-details");
+
 
