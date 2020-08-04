@@ -58,6 +58,21 @@
     .nav-bar__list {
         display: none;
     }
+    .nav-bar__logo {
+        margin-right: auto;
+    }
+    .sidenav {
+        background-color: white;
+        box-shadow: -2rem 0rem 6rem rgba(0,0,0,0.08);
+    }
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        @include appliedFont('Poppins', 500, 2.8rem);
+        color: black;
+        display: block;
+        transition: 0.3s;
+    }
     .btn {
         display: none;
     }
@@ -137,7 +152,7 @@
         top: 40%;
     }
     .sticky {
-        padding: 4.5rem 18rem !important;
+        padding: 4.5rem 8rem !important;
     }
     .hero-section {
         flex-direction: column-reverse;
@@ -281,3 +296,13 @@
         margin-bottom: 1.8rem;
     }
 }
+@media only screen and (min-width: 769px) {
+    .nav-bar .burger-toggle {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

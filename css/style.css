@@ -951,6 +951,36 @@ div.eapps-widget {
   box-shadow: 0rem 3rem 5rem rgba(0, 0, 0, 0.08);
   z-index: 10000; }
 
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px; }
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s; }
+
+.sidenav a:hover {
+  color: #f1f1f1; }
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px; }
+
 .socail-media-box {
   position: fixed;
   top: 50%;
@@ -1114,6 +1144,20 @@ footer {
 @media only screen and (max-width: 768px) {
   .nav-bar__list {
     display: none; }
+  .nav-bar__logo {
+    margin-right: auto; }
+  .sidenav {
+    background-color: white;
+    box-shadow: -2rem 0rem 6rem rgba(0, 0, 0, 0.08); }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 2.8rem;
+    color: black;
+    display: block;
+    transition: 0.3s; }
   .btn {
     display: none; }
   .details-section {
@@ -1170,7 +1214,7 @@ footer {
     min-height: 30rem;
     top: 40%; }
   .sticky {
-    padding: 4.5rem 18rem !important; }
+    padding: 4.5rem 8rem !important; }
   .hero-section {
     flex-direction: column-reverse; }
     .hero-section__bg {
@@ -1274,3 +1318,13 @@ footer {
   .zsiq_theme1.zsiq_floatmain {
     margin-right: 20rem;
     margin-bottom: 1.8rem; } }
+
+@media only screen and (min-width: 769px) {
+  .nav-bar .burger-toggle {
+    display: none; } }
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px; }
+  .sidenav a {
+    font-size: 18px; } }

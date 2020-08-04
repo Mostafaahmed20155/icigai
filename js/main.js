@@ -37,6 +37,15 @@ function twtIconNotSelected() {
     document.querySelector('.twt-icon').src = "./img/Icon awesome-twitter.svg";
 }
 
+//SIDE NAV-BAR
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+
 //AOS
   AOS.init();
 
