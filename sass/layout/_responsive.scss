@@ -65,16 +65,11 @@
         background-color: white;
         box-shadow: -2rem 0rem 6rem rgba(0,0,0,0.08);
     }
-    .sidenav a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        @include appliedFont('Poppins', 500, 2.8rem);
-        color: black;
-        display: block;
-        transition: 0.3s;
-    }
     .btn {
         display: none;
+    }
+    .hero-section__content-box .hero-btn {
+        z-index: 1;
     }
     .details-section {
         flex-direction: column-reverse;

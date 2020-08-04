@@ -81,10 +81,11 @@
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 9999999999999999;
     top: 0;
     right: 0;
-    background-color: #111;
+    background-color: white;
+    box-shadow: -2rem 0rem 6rem rgba(0,0,0,0.08);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -93,8 +94,8 @@
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    @include appliedFont('Poppins', 500, 2.8rem);
+    color: black;
     display: block;
     transition: 0.3s;
   }
