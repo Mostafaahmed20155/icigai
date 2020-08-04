@@ -1166,6 +1166,9 @@ footer {
     width: 55%; } }
 
 @media only screen and (max-width: 475px) {
+  .socail-media-box {
+    min-height: 30rem;
+    top: 40%; }
   .sticky {
     padding: 4.5rem 18rem !important; }
   .hero-section {
