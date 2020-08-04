@@ -15,11 +15,11 @@
 @import "components/scroll-bar";
 @import "components/form-input";
 
+//PAGES 
+@import "pages/homepage";
+
 //Layout
-@import "layout/responsive";
 @import "layout/nav-bar";
 @import "layout/socail-media";
 @import "layout/footer";
-
-//PAGES 
-@import "pages/homepage";
+@import "layout/responsive";
