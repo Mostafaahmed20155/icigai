@@ -8,6 +8,7 @@ window.addEventListener("scroll", () => {
     navBar.classList.toggle("sticky", window.scrollY > 0)
 })
 
+
 //FACEBOOK
 function fbIconSelected() {
     document.querySelector('.fb-icon').src = "./img/Icon awesome-facebook-f-selected.svg";

@@ -4,16 +4,24 @@
   "description": "A website for multiple solutions",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "watch:sass": "node-sass sass/main.scss public/css/style.css -w",
     "devserver": "live-server",
-    "start": "npm-run-all --parallel watch:sass devserver"
+    "start": "npm-run-all --parallel watch:sass devserver",
+    "start-server": "node app.js",
+    "start:dev": "nodemon app.js"
   },
   "author": "Mostafa Saad",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.14.1"
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4"
   },
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "node.js": "0.0.1-security",
+    "nodemailer": "^6.4.11",
     "npm-run-all": "^4.1.5",
     "owl.carousel": "^2.3.4",
     "parallax-js": "^3.1.0"

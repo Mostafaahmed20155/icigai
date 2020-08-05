@@ -6,6 +6,15 @@
     .zsiq_theme1.zsiq_floatmain{ 
         margin-right: 10rem;
     }
+    .container__bg {
+        top: 15%;
+        animation-name: animatedBackground;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+        z-index: -1;
+        width: 75%;
+    }
 }   
 @media only screen and (max-width: 1200px) {
     html {
@@ -30,11 +39,26 @@
         margin-right: 14rem;
         margin-bottom: 1rem;
     }
+    .container__bg {
+        top: 25%;
+        animation-name: animatedBackground;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+        z-index: -1;
+        width: 75%;
+    }
 }
 @media only screen and (max-width: 768px) {
     html {
         font-size: 33.33%; 
         scroll-behavior: smooth;
+    }
+    .container__bg {
+        top: 30%;
+        z-index: -1;
+        width: 80%;
+        transform: rotateY(180deg);
     }
 }
 
@@ -278,6 +302,21 @@
     }
     footer .col-2 a:not(:first-child), footer .col-3 a:not(:first-child), footer .col-4 a:not(:first-child), footer .col-5 a:not(:first-child), footer .col-6 a:not(:first-child) {
         font-size: 2.6rem;
+    }
+    .container .left-upper-circle {
+        width: 40%;
+    }
+    .container .right-lower-circle {
+        width: 40%;
+    }
+    .container .triangles {
+       width: 20%;
+    }
+    .container .lines {
+       width: 30%;
+    }
+    .container .thank-you-logo {
+       width: 40%;
     }
 }
 

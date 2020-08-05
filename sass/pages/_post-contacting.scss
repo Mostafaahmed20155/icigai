@@ -1,0 +1,57 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    // background-color: orangered; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    &__bg {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        @include bgAnimation;
+        z-index: -1;
+        width: 70%;
+    }
+
+    .left-upper-circle {
+        position: absolute;
+        top: 0;
+        left: 0;    
+        width: 20%;
+    }
+    .right-lower-circle {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 15%;
+    }
+    .lines {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 15%;
+    }
+    .triangles {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 10%;
+    }
+    .thank-you-logo {
+        margin-bottom: 3.5rem;
+        width: 15%;
+    }
+    h1 {
+        @include appliedFont('Poppins', 600, 4rem);
+        margin-bottom: 3.5rem;
+    }
+    p {
+        text-align: center;
+        color: #D6D6D6;
+        @include appliedFont('Poppins', 500, 2.6rem);
+        margin-bottom: 3.5rem;
+    }
+}
