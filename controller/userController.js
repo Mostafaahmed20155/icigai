@@ -17,7 +17,7 @@ exports.getIndex = (req, res, next) => {
     <hr>
     <P>Full name: ${fullName}</P>
     <P>Email Address: ${email}</P>
-    <P>Message Content</P>
+    <P>Message Content:</P>
     <p> ${messageContent} </p>
     `;
     async function main() {
